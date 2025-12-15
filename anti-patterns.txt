@@ -1,0 +1,19 @@
+Analyse Anti-patterns - SpaghettiFinanceApp.java
+
+1) Anti-patterns Identifiés
+- God Class : Une seule classe (`SpaghettiFinanceApp`) gère UI, logique métier, données
+- Spaghetti Code : Structure imbriquée avec multiples if/else, flux difficile à suivre
+- Hard Coding : Valeurs et paramètres codés en dur
+- Absence d'Abstraction : Pas d'interfaces, tout en implémentation concrète
+- Couplage Fort : Modules inséparables, impossible de tester unitairement
+
+2) Violations SOLID
+- Single Responsibility (SRP) : La classe a trop de responsabilités
+- Open/Closed (OCP) : Modification nécessaire pour étendre les fonctionnalités
+- Dependency Inversion (DIP) : Dépendances directes aux implémentations
+
+3) Proposition d'Architecture
+Application modulaire avec séparation des couches :
+- Couche Modèle (User, Account, Transaction)
+- Couche Service (logique métier)
+- Couche Patterns (Strategy, Factory, Observer)
