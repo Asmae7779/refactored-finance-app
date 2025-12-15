@@ -32,7 +32,7 @@ public class SpaghettiFinanceApp {
 
             switch (choice) {
                 case 1:
-                    System.out.println("Nom utilisateur:");
+                    System.out.println("Nomm utilisateur:");
                     String user = scanner.next();
                     if (accounts.containsKey(user)) {
                         System.out.println("Solde: " + accounts.get(user));
